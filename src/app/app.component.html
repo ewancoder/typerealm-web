@@ -1,0 +1,33 @@
+<h1>{{ title }}</h1>
+
+<pre>{{ state$ | async | json }}</pre>
+
+<pre>{{ location | json }}</pre>
+
+<div>
+  <button (click)='enterRoad(1)'>Enter Road 1</button>
+  <button (click)='enterRoad(2)'>Enter Road 2</button>
+  <button (click)='enterRoad(3)'>Enter Road 3</button>
+  <button (click)='enterRoad(4)'>Enter Road 4</button>
+  <button (click)='enterRoad(5)'>Enter Road 5</button>
+  <button (click)='enterRoad(6)'>Enter Road 6</button>
+  <button (click)='enterRoad(7)'>Enter Road 7</button>
+  <button (click)='enterRoad(8)'>Enter Road 8</button>
+</div>
+<div>
+  <button (click)='enterLocation(1)'>Enter Location 1</button>
+  <button (click)='enterLocation(2)'>Enter Location 2</button>
+  <button (click)='enterLocation(3)'>Enter Location 3</button>
+  <button (click)='enterLocation(4)'>Enter Location 4</button>
+  <button (click)='enterLocation(5)'>Enter Location 5</button>
+</div>
+<div>
+  <button (click)='move(1)'>Move 1</button>
+  <button (click)='move(2)'>Move 2</button>
+  <button (click)='move(5)'>Move 5</button>
+  <button (click)='move(20)'>Move 20</button>
+  <button (click)='move(150)'>Move 150</button>
+</div>
+<div>
+  <button (click)='turnAround()'>Turn around</button>
+</div>
